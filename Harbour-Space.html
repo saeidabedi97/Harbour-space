@@ -194,6 +194,7 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    margin: 2% 0% 0% 2%;
     
    }
 
@@ -205,20 +206,39 @@
    #boy-div{
        display: grid;
        grid-template-columns: auto 65%;
+       text-align: center;
+       margin: 16% 0% 0% 13%;
        
    }
 
-   #boy-div h3{
+   #boy-text h3{
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 56px;
-
-
     letter-spacing: -0.6px;
-
     color: #685DC5;
+   }
+
+   #boy-text p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+
+    letter-spacing: -0.33px;
+
+    color: #535353;
+   }
+
+   #boy-text{
+       display: grid;
+       grid-template-rows: auto auto;
+       /* margin-right: 60%; */
+       width: 95%;
+       text-align: left;
    }
     </style>
 </head> 
@@ -280,12 +300,13 @@
     <div id="boy-div">
         <img src="image4.png" alt="an image" id="background-image2">
         <img src="boy.png" alt="an image" id="boy">
-        <div>
-            <h3>About the<br>apprenticeship</h3>
-            <p>Our scholarships are designed to give talented and<br>
-            driven young people from any background access<br>
-            to top-class education, experience and network.<br> We offer a fully-funded master’s degree alongside<br>
-            an apprenticeship and a guaranteed job upon <br>graduation.</p>
+        <div id="boy-text">
+            <h3>About the<br> apprenticeship</h3>
+            <p>Our scholarships are designed to give talented and
+            driven young people from any background access
+            to top-class education, experience and network.
+            We offer a fully-funded master’s degree alongside
+            an apprenticeship and a guaranteed job upon graduation.</p>
         </div>
     </div>
 
