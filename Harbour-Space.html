@@ -164,19 +164,19 @@
        
     }
 
-    #content1{
+   #first-section{
+       display: grid;
+       grid-template-columns: auto auto;
+       margin: 0% 0% 0% 10%;
+   }
+
+   #second-section{
         position: relative;
         display: grid;
         grid-template-rows: auto auto auto;
         margin-top: 20%;
         
     }
-   
-   #first-page{
-       display: grid;
-       grid-template-columns: auto auto;
-       margin: 0% 0% 0% 10%;
-   }
 
    #image3{
     position: absolute;
@@ -184,8 +184,6 @@
     height: 257px;
     left: 930px;
     top: 613px;
-    
-    
     border: 1px solid #E6E6E6;
    }
 
@@ -201,9 +199,10 @@
    #background-image2{
     width: 350px;
     height: 350px;
+    /* position: fixed; */
    }
 
-   #boy-div{
+   #Third-section{
        display: grid;
        grid-template-columns: auto 65%;
        text-align: center;
@@ -236,9 +235,160 @@
    #boy-text{
        display: grid;
        grid-template-rows: auto auto;
-       /* margin-right: 60%; */
-       width: 95%;
        text-align: left;
+   }
+
+   #Fourth-section{
+    display: grid;
+    grid-template-columns: auto auto 45%;
+    
+   /* grid-template-columns: repeat(3, 1fr); */
+   grid-template-rows: repeat(3, 100px);
+    
+    /* grid-template-rows: auto auto; */
+    margin-top: 10%;
+    
+   }
+
+   #box1{
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px;
+    width: 60%;
+    height: 450px;
+    margin: 0% 0% 0% 35%;
+   }
+
+   #box1-bottom{
+       display: grid;
+       grid-template-columns: auto 1fr;
+       
+       border-top: 1px solid #DADADA;
+
+   }
+
+   #price1{
+    font-family: serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 24px;
+
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.436364px;
+
+    color: #535353;
+   }
+
+
+   #box2{
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 90%;
+    height: 250px;
+    padding: 10px;
+   }
+
+   .box2-inner-bottom p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: -0.16px;
+    border-top:  1px solid #DADADA;
+    
+    color: #535353;
+   }
+
+   .box2-inner-top p{
+    font-family: serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 35px;
+
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.185714px;
+
+    color: #6A6A6A;
+        }
+
+
+   #box3{
+    display: grid;
+    grid-template-rows: auto auto;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 45%;
+    height: 260px;
+    
+    
+   }
+
+   .box3-inner-top p{
+    font-family: serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.185714px;
+    
+    color: #6A6A6A;
+   }
+
+    .box3-inner-bottom p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    border-top: 1px solid #DADADA;
+    margin: 0% 0% 0% 5%;
+    color: #535353;
+    
+    }
+
+   #box4{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    /* grid-template-col: auto auto; */
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 35% 0% 0% 100%;
+    width: 550px;
+    height: 180px;
+    
+   }
+
+
+   .box4-inner-top p{
+    font-family: serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.185714px;
+    
+    color: #6A6A6A;
    }
     </style>
 </head> 
@@ -246,7 +396,7 @@
 
         <img src="Image.png" alt="header image" id="header-img">
         <img src="image1.png" alt="an image" id="logo1">
-    <div id="first-page">
+    <div id="first-section">
         <div id="interaction-design">
             <h1>Interaction Design<br>Apprenticeship</h1>
             <p id="work-study">A fully funded work-study program to launch<br> your tech career </p>
@@ -261,7 +411,7 @@
         </div>
         
         <img id="image3" alt="an image" src="image3.png">
-        <div id="content1">
+        <div id="second-section">
             <div id="div-powered-by">
                 <img src="image2.png" alt="an image" id="logo2">
                 <p>Powered by:<br><strong>Zeptolab</strong></p>
@@ -297,7 +447,7 @@
         </div>
     </div>
     
-    <div id="boy-div">
+    <div id="Third-section">
         <img src="image4.png" alt="an image" id="background-image2">
         <img src="boy.png" alt="an image" id="boy">
         <div id="boy-text">
@@ -311,5 +461,76 @@
     </div>
 
     
+    <div id="Fourth-section">
+        <div id="box1">
+            <div class="box1-inner-top">
+            <h4 class="purple-text">Scholarship value</h4>
+            <p id="price1">€31,300</p>
+            </div><br><br><br>
+            
+            <div id="box1-bottom">
+                <div class="box1-inner-bottom">
+                    <h4 class="purple-text">Tuition covered</h4>
+                    <p>€20,900</p>
+                </div>
+            
+
+                <div class="box1-inner-bottom">
+                    <h4 class="purple-text">Remaining </h4>
+                    <p>€2,000</p>
+                </div>
+
+                <div class="box1-inner-bottom">
+                    <h4 class="purple-text">Living stipend </h4>
+                    <p>€8,400(€700/month)</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="box2">
+            <div class="box2-inner-top">
+                <h4 class="purple-text">Study commitment</h4>
+                <p>3 hours / day</p>
+                
+            </div>
+
+            <div class="box2-inner-bottom">
+                <p>You will complete 15 modules to<br> graduate. 
+                    Daily classes are 3 hours,<br> plus coursework to 
+                    complete in your<br>own time.</p>
+
+            </div>
+        </div>
+
+        <div id="box3">
+            <div class="box3-inner-top">
+                <h4 class="purple-text">Work commitment</h4>
+                <p>4 hours / day</p>
+                
+            </div>
+
+            <div class="box3-inner-bottom">
+                <p>Immerse yourself in the professional<br> world during your apprenticeship.
+                You’ll<br> learn the ropes from the best and get to<br>apply your newly acquired 
+                knowledge in<br>the field from day one.
+                </p>
+
+            </div>
+        </div>
+        
+        <div id="box4">
+            <div class="box4-inner-top">
+                <h4 class="purple-text">A full-time contract</h4>
+                <p>1 Year / Full-Time</p>
+                <hr>
+            </div>
+
+            <div class="box4-inner-bottom">
+                <p>You’ll be guaranteed a 1 year contract with SCG upon graduation.</p>
+
+            </div>
+            
+        </div>
+    </div>
     </body>
 </html>
