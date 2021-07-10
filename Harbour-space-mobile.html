@@ -22,8 +22,8 @@
 
         #header{
         display: grid;
-        grid-template-columns: 35% auto 24%;
-        width: 310px;
+        grid-template-columns: 30% auto 15%;
+        width: 375px;
         height: 45px;
         background: #685DC5;
         }
@@ -56,7 +56,7 @@
             font-size: 35px;
             line-height: 40px;
             margin-top: 45%;
-            width: 400px;
+            width: 375px;
             letter-spacing: -0.4375px;
 
             color: #685DC5;
@@ -348,10 +348,27 @@
     border-radius: 50%;
    }
 
+   #purple-slider-background{
+    position: absolute;
+    width: 375px;
+    height: 257px;
+    left: 0px;
+    margin-top: 15%;
+    z-index: -1;
+   }
 
+   #line-slider-background{
+    position: absolute;
+    width: 292px;
+    height: 257px;
+    left: 0px;
+    margin-top: 15.5%;
+    mix-blend-mode: color-burn;
+    /* border: 1px solid #E6E6E6; */
+   }
    .slideshow-container {
     position: relative;
-    margin-left: 5%;
+    margin-left: 25%;
     top: 100px; 
     width: 290px;
     height: 400px;
@@ -364,6 +381,7 @@
     box-sizing: border-box;
     border-radius: 4px;
     width: 290px;
+    /* height: 500px; */
     
    }
 
@@ -379,7 +397,7 @@
     font-size: 18px;
     line-height: 29px;
     letter-spacing: -0.218182px;
-    width: 100%;
+    /* width: 100%; */
     color: #535353;
 
    }
@@ -428,6 +446,89 @@ text-align: center;
   from {opacity: 0.4}
   to {opacity: 1}
 }
+
+
+#FAQ{
+       display: grid;
+       grid-template-rows: auto auto auto;
+       width: 300px;
+   }
+
+   #FAQ h5{
+    font-family: serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.4375px;
+    color: #685DC5;
+   }
+
+   select{
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 29px;
+    height: 100%;
+    width: 35%;
+
+   }
+
+   #FAQ-bottom-1{
+       display: grid;
+       grid-template-columns: auto auto;
+       /* margin:2% 0% 0% 15%; */
+   }
+
+   #FAQ-bottom{
+       display: grid;
+       grid-template-rows: auto auto auto;
+   }
+
+   #button1{
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 25px;
+    /* height: 100%; */
+   }
+
+   #button2{
+       border: 1px solid #DADADA;
+       box-sizing: border-box;
+       border-radius: 50%;
+       width: 25px;
+   }
+   #last-section{
+       display: grid;
+       grid-template-rows: auto auto;
+   }
+
+   #toShow-section{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    width: 45%;
+
+    letter-spacing: -0.33px;
+
+    color: #535353;
+   }
+
+   #questions{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+
+
+    letter-spacing: -0.33px;
+
+    color: #535353;
+   }
+
 </style>
 <body>
     <div id="header">
@@ -556,13 +657,15 @@ text-align: center;
             </div>
         </div>
 
+        <img src="purple-background.png" alt="an image" id="purple-slider-background">
+        <img src="slider-background.png" alt="an image" id="line-slider-background">
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="slider-details">
                     <div class="slider-details-top">
                         <img src="woman.png" alt="an image" id="woman-img">
                         <p>Irene Pereyra<br>Researcher lead</p>
-                    </div>
+                    </div><br>
                     <div class="slider-details-bottom">
                         <p>This Fellowship was a turning point in my career. 
                         I wouldn’t be where I am today without the financial 
@@ -612,5 +715,68 @@ text-align: center;
         </div>
           
         <script src="silder-mobile.js"></script>
+
+        <div id="last-section">
+            <div id="FAQ">
+                <h5>Frequently asked questions</h5><br>
+                <p>Filter by:</p>
+                <select class="purple-text">
+                    <option value="program condition" >program condition</option>
+                    <option value="All" >All</option>
+                    <option value="Achievement" >Achievement</option>
+                    <option value="SCG" >SCG</option>
+                </select>
+            </div>
+    
+            <div id="FAQ-bottom">
+                <div id="FAQ-bottom-1">
+                    <div id="FAQ-bottom-1-details">
+                        <p id="questions">What are my obligations?</p>
+                        <!-- <p id="toShow-section"> 
+                            The majority of our students receive numerous job offers
+                            at the end of the second academic year of their Bachelor's
+                            programme and at the end of the first academic year of
+                            their Master's programme. The best applicants receive an offer from our industrial partners at the beginning of their programmes.<br>
+                            Harbour.Space is highly recognized among innovative employers and is strategic 
+                            partner of B.Grimm multi- industry corporation with 140 years of history in Thailand.<br>
+                            Together we insure students get the best knowledge about the current job market 
+                            opportunities.
+                            We offer our students paid internships options during studies jointly with our industrial
+                            partners.<br>
+                            Employers that hired graduates of Harbour.Space in the past include Google, IBM, Accenture, Typeform,
+                            Frog, and other tech centric companies. Our industry specific employability report could 
+                            be provided to you separately during the admission process.</p> -->
+                    </div>
+                    <button id="button1" onclick="myFunction()">+</button>
+                </div>
+    
+                <div id="FAQ-bottom-1">
+                    
+                    <div id="FAQ-bottom-1-details">
+                        <p id="questions">Do I get a job placement upon graduation?</p>  
+                    </div>
+                    <button id="button2">+</button>
+                </div>
+    
+                <div id="FAQ-bottom-1">
+                    <div id="FAQ-bottom-1-details">
+                        <p id="questions">What if I want to start my own company? </p>
+                    </div>
+                    <button id="button3" >+</button>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            function myFunction() {
+              var x = document.getElementById("toShow-section");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            </script>
+    
 </body>
 </html>
