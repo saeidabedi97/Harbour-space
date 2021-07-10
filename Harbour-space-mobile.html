@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harbour Space</title>
+</head>
+<style>
+
+    *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        #menu-icon{
+            width: 35px;
+            height: 30px;
+        }
+
+
+        #header{
+        display: grid;
+        grid-template-columns: 35% auto 24%;
+        width: 310px;
+        height: 45px;
+        background: #685DC5;
+        }
+
+        #harbour{
+            color: whitesmoke;
+            font-size: 15px;
+            font-family: 'Segoe UI';
+        }
+
+        #header-p{
+            color: whitesmoke;
+            font-size: 16px;
+            font-family: 'Segoe UI';
+        }
+
+        #logo1{
+        position: absolute;
+        left: 45%;
+        top: 6%;
+        width: 133px;
+        height: 130px;
+        }
+
+
+        #interaction-design{
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 40px;
+            margin-top: 45%;
+            width: 400px;
+            letter-spacing: -0.4375px;
+
+            color: #685DC5;
+        }
+
+        #powered-by{
+            font-family: serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 24px;
+            color: black;
+        }
+
+        #logo2{
+            /* position: absolute; */
+            height: 62px;
+            width: 62px;
+        }
+
+        #application-time{
+            display: grid;
+            grid-template-rows: auto auto;
+            
+            padding: 15px;
+            background: #FFFFFF;
+            border: 1px solid #DADADA;
+            box-sizing: border-box;
+            border-radius: 4px;
+            width: 295px;
+            height: 98px;
+            
+        }
+
+        #application-time h2{
+            font-family: serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -0.16px;
+
+            color: #685DC5;
+
+       }
+
+
+       #application-time p {
+        font-family: serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+
+        color: #535353;
+        
+       }
+
+       #application-details{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 295px;
+        /* margin: 0% 35% 0% 0%; */
+        /* padding: 13px; */
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .purple-text {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.16px;
+
+        color: #685DC5;
+       
+    }
+
+       #text-section{
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            /* margin-top: 23%;
+            margin-left: 16%; */ 
+            width: 375px;
+            
+        }
+
+        #funded-work{
+            font-family: serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.27px;
+            width: 80%;
+            color: #535353;
+        }
+        
+        #unbold-text{
+            font-family: serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            width: 85%;
+            letter-spacing: -0.27px;
+
+            color: #535353;
+        }
+
+        #work-text{
+            font-family: serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+
+
+            letter-spacing: -0.27px;
+
+            color: #535353;
+        }
+
+        #apply-button{
+        background: #685DC5;
+        border-radius: 27px;
+        color: whitesmoke;
+        font-family: 'Segoe UI';
+        width: 30%;
+        height: 100%;
+        padding: 8px;
+    }
+
+    #purple-background{
+        position: absolute;
+        width: 330px;
+        height: 401px;
+        /* left: -1px; */
+        top: 1000px;
+        z-index: -1;
+    }
+
+    #line-background{
+        position: absolute;
+        width: 278px;
+        height: 245px;
+        left: 18px;
+        top: 855px;
+        z-index: -1;
+    }
+
+    #building-img{
+        position: absolute;
+        width: 235px;
+        height: 220px;
+        left: 38px;
+        top: 875px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    #second-section-text{
+        position: absolute;
+        width: 275px;
+        height: 480px;
+        /* left: 20px; */
+        top: 988px;
+        margin-left: 5%;
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        box-sizing: border-box;
+        border-radius: 0px 0px 4px 4px; 
+            
+    }
+
+    #second-section-text h3{
+        font-family: serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 40px;
+        margin-top: 45%;
+        letter-spacing: -0.4375px;
+        margin-left: 5%;
+        color: #685DC5;
+    }
+
+    #second-section-text p{
+        font-family: serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 5% 0% 0% 2%;
+        letter-spacing: -0.27px;
+
+        color: #535353;
+
+    }
+
+    .price{
+        font-family: serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 24px;
+
+
+        letter-spacing: -0.218182px;
+
+        color: #535353;
+   }
+
+
+   #price-section{
+       display: grid;
+       grid-template-rows: auto auto auto;
+        margin-top: 680px;
+        margin-left: 25%;
+   }
+
+   #price-section-inner{
+       display: grid;
+       grid-template-columns: auto auto;
+       gap: 20%;
+   }
+
+   #box1{
+    display: grid;
+    grid-template-rows: auto auto;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px;
+    width: 285px;
+    height: 250px;
+   }
+
+   #box2{
+    display: grid;
+    grid-template-rows: auto auto;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 285px;
+    height: 250px;
+    padding: 10px;
+   }
+
+   #box3{
+    display: grid;
+    grid-template-rows: auto auto;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 285px;
+    height: 250px;
+   }
+
+   #box-section{
+       display: grid;
+       grid-template-rows: auto auto auto;
+       gap: 25px;
+       margin-left: 5%;
+       margin-top: 50px;
+   }
+
+   .box-text{
+    font-family: serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    color: #535353;
+   }
+
+   #woman-img{
+    width: 85px;
+    height: 75px;
+    border-radius: 50%;
+   }
+
+
+   .slideshow-container {
+    position: relative;
+    margin-left: 5%;
+    top: 100px; 
+    width: 290px;
+    height: 400px;
+       
+}
+
+.slider-details{
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 290px;
+    
+   }
+
+   .slider-details-top{
+       display: grid;
+       grid-template-columns: 1fr 100% ;  
+   }
+
+   .slider-details-bottom p {
+    font-family: serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: -0.218182px;
+    width: 100%;
+    color: #535353;
+
+   }
+
+   .slider-details-bottom{
+    background: #FBFBFB;
+    border-radius: 0px 0px 4px 4px; 
+   }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 65%;
+  border: 2px solid #ECECEC;
+  color:  #685DC5;
+text-align: center;
+  font-size: 18px;
+  border-radius: 100%;
+  width: 40px;
+  height: 35px;
+}
+
+.next {
+  right: 0;
+}
+
+.prev{
+    margin-left: 200px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+</style>
+<body>
+    <div id="header">
+        <h1 id="harbour">Harbour Space </h1>
+        <p id="header-p">/Interaction design</p>
+        <img src="menu-icon.png" alt="an image" id="menu-icon">
+    <div>
+    
+        <div id="first-section">
+
+            <img src="image1.png" alt="an image" id="logo1">
+            <h1 id="interaction-design">Interaction Design Apprenticeship</h1><br>
+            <p id="powered-by">Powered by:<strong>Zeptolab</strong></p>
+            <img src="image2.png" alt="an image" id="logo2">
+            
+            <div id="application-time">
+                <h2>Application closes in <h2>
+                <p>6 Day  :  22 Hrs  :  56 Min  :  13 Seg</p>
+            </div><br>
+
+            <div id="application-details">
+                <div>
+                    <p class="purple-text"><strong>Location</strong></p>
+                    <p>Bangkok</p>
+                </div>
+
+                <div>
+                <p class="purple-text"><strong>Duration</strong></p>
+                <p>1 year<br>full time</p> 
+                </div>
+
+                <div>
+                <p class="purple-text"><strong>Start date</strong></p>
+                <p>30 June 2020</p>
+                </div>
+
+                <div>
+                <p class="purple-text"><strong>End date</strong></p>
+                <p>3 Aug 2020</p>
+                </div>
+            </div><br>
+
+            <div id="text-section">
+                <p id="funded-work">A fully funded work-study program to launch your tech career </p><br> 
+    
+                <p id ="unbold-text">Harbour.Space has partnered with SCG to empower driven talent
+                and eliminate the barriers to accessing exceptional education and 
+                career opportunities through a Masters Fellowship. </p><br>
+    
+                <p id="work-text"><strong>Position:</strong> Marketing Performance</p><br>
+    
+                <button type="button" id="apply-button">Apply now</button> 
+             </div>
+        </div>
+        <div id="second-section">
+            <div id="second-section-image">
+                <img src="purple-background.png" alt="an image" id="purple-background">
+                <img src="line-background.png" alt="an image" id="line-background">
+                <img src="building.png" alt="an image" id="building-img">
+            </div>
+            <div id="second-section-text">
+                <h3>About the apprenticeship</h3><br>
+                <p>Our scholarships are designed to give talented and driven 
+                    young people from any background access to top-class education, 
+                    experience and network. We offer a fully-funded 
+                    master’s degree alongside an apprenticeship and a guaranteed job upon graduation. </p>
+            </div>
+        </div>
+
+        <div id="price-section">
+            <div>
+             <p class="purple-text">Fellowship value</p>
+             <p class="price">€31,300</p>
+            </div><br>
+            <div id="price-section-inner">
+                <div>
+                <p class="purple-text">Tuition</p>
+                <p class="price">€22,900</p>
+                </div>
+                <div>
+                <p class="purple-text">Remaining</p>
+                <p class="price">€8,400</p>
+                </div>
+            </div><br>
+            <div>
+            <p class="purple-text">Living Stipend</p>
+            <p class="price">€8,400(€700/month)</p>
+            </div>
+        </div>
+
+        <div id="box-section">
+            <div id="box1">
+                <div class="box1-inner-top">
+                    <h4 class="purple-text">study commitment</h4><br>
+                    <p class="price">3 hours / day</p>
+                </div>
+                <div id="box1-bottom">
+                    <p class="box-text">You will complete 15 modules to graduate. Daily classes are 3 hours,
+                    plus coursework to complete in your own time. </p>
+                </div>
+            </div>
+
+            <div id="box2">
+                <div class="box2-inner-top">
+                    <h4 class="purple-text">Apprenticeship Commitment</h4>
+                    <p class="price">3 hours / day</p>
+                </div>
+    
+                <div class="box2-inner-bottom">
+                    <p class="box-text">Immerse yourself in the professional world during your apprenticeship.
+                     You’ll learn the ropes from the best and get to apply your newly acquired 
+                     knowledge in the field from day one.  </p>
+                </div>
+            </div>
+    
+            <div id="box3">
+                <div class="box3-inner-top">
+                        <h4 class="purple-text">A full-time contract</h4>
+                        <p class="price">1 Year / Full-Time</p>
+                        
+                </div>
+    
+                <div class="box3-inner-bottom">
+                        <p class="box-text">You’ll be guaranteed a 1 year contract with SCG upon graduation. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="slider-details">
+                    <div class="slider-details-top">
+                        <img src="woman.png" alt="an image" id="woman-img">
+                        <p>Irene Pereyra<br>Researcher lead</p>
+                    </div>
+                    <div class="slider-details-bottom">
+                        <p>This Fellowship was a turning point in my career. 
+                        I wouldn’t be where I am today without the financial 
+                        support and experienced offered through the program.<br>
+                        Education · B.A. Visual Design</p>
+                        
+                    </div>
+                </div>
+            </div>
+          
+            <div class="mySlides fade">
+                <div class="slider-details">
+                    <div class="slider-details-top">
+                        <img src="woman.png" alt="an image" id="woman-img">
+                        <p>Irene Pereyra<br>Researcher lead</p>
+                        
+                    </div>
+                    <div class="slider-details-bottom">
+                        <p>This Fellowship was a turning point in my career. 
+                        I wouldn’t be where I am today without the financial 
+                        support and experienced offered through the program.<br>
+                        Education · B.A. Visual Design</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="slider-details">
+                    <div class="slider-details-top">
+                        <img src="woman.png" alt="an image" id="woman-img">
+                        <p>Irene Pereyra<br>Researcher lead</p>
+                        
+                    </div>
+                    <div class="slider-details-bottom">
+                        <p>This Fellowship was a turning point in my career. 
+                        I wouldn’t be where I am today without the financial 
+                        support and experienced offered through the program.<br>
+                        Education · B.A. Visual Design</p>
+                        
+                    </div>
+                </div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+          
+        <script src="silder-mobile.js"></script>
+</body>
+</html>
