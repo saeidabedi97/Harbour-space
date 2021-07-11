@@ -2,198 +2,184 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <link href="//db.onlinewebfonts.com/c/0406c39d71726a4efe1134bf8e3feb71?family=Apercu+Pro" rel="stylesheet" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harbour Space</title>
 </head>
 <style>
 
-    *{
-            padding: 0%;
-            margin: 0%;
-            box-sizing: border-box;
-        }
+    * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
 
-        #menu-icon{
-            width: 35px;
-            height: 30px;
-            margin-top: 8px;
-        }
+    #menu-icon{
+        width: 35px;
+        height: 30px;
+        margin-top: 8px;
+    }
 
-
-        #header{
+    #header{
         display: grid;
         grid-template-columns: 30% auto 15%;
         width: 375px;
         height: 45px;
         background: #685DC5;
-        
-        }
+    }
 
-        #harbour{
-            color: whitesmoke;
-            font-size: 15px;
-            font-family: 'Segoe UI';
-            margin-top: 10px;
-        }
+    #harbour{
+        color: whitesmoke;
+        font-size: 15px;
+        font-family:'Apercu Pro';
+        margin:2px 0px 0px 5px;
+    }
 
-        #header-p{
-            color: whitesmoke;
-            font-size: 16px;
-            font-family: 'Segoe UI';
-            margin-top: 10px;
-        }
+    #header-p{ /* (/interaction design) in top menu*/
+        color: whitesmoke;
+        font-size: 11px;
+        font-family: 'Apercu Pro';
+        margin: 10px 0px 0px 5px;
+    }
 
-        #logo1{
+    #logo1{ /* the logo behind the header*/
         position: absolute;
-        left: 45%;
+        margin-left: 185px;
         top: 6%;
         width: 133px;
         height: 130px;
-        }
+    }
 
+    #interaction-design{   /* Interaction Design Apprenticeship */ 
+        font-family: 'Apercu Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 40px;
+        margin-top: 45%;
+        width: 375px;
+        letter-spacing: -0.4375px;
+        color: #685DC5;
+    }
 
-        #interaction-design{
-            font-family: 'Segoe UI';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 35px;
-            line-height: 40px;
-            margin-top: 45%;
-            width: 375px;
-            letter-spacing: -0.4375px;
-
-            color: #685DC5;
-        }
-
-        #powered-by{
-            font-family: serif;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 12px;
-            line-height: 24px;
-            color: black;
-        }
-
-        #logo2{
-            /* position: absolute; */
-            height: 62px;
-            width: 62px;
-        }
-
-        #application-time{
-            display: grid;
-            grid-template-rows: auto auto;
-            
-            padding: 15px;
-            background: #FFFFFF;
-            border: 1px solid #DADADA;
-            box-sizing: border-box;
-            border-radius: 4px;
-            width: 295px;
-            height: 98px;
-            
-        }
-
-        #application-time h2{
-            font-family: serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 22px;
-            letter-spacing: -0.16px;
-
-            color: #685DC5;
-
-       }
-
-
-       #application-time p {
-        font-family: serif;
+    #powered-by{
+        font-family: 'Apercu Pro';
         font-style: normal;
         font-weight: 300;
-        font-size: 20px;
+        font-size: 12px;
+        line-height: 24px;
+        width: 350px;
+        color: black;
+        opacity: 0.5;
+    }
+
+    #logo2{/*red elephant logo*/
+        height: 62px;
+        width: 62px;
+    }
+
+    #application-time{ /* application deadline box*/
+    display: grid;
+    grid-template-rows: auto auto;   
+    padding: 15px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 295px;
+    height: 98px;       
+    }
+
+    #application-time h2{/* Application closes in header*/
+        font-family: 'Apercu Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.16px;
+        color: #685DC5;
+    }
+
+
+    #application-time p {
+        font-family: 'Apercu Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
         line-height: 24px;
         letter-spacing: -0.2px;
+        color: #535353;       
+    }
 
-        color: #535353;
-        
-       }
-
-       #application-details{
+    #application-details{/*The second box*/
         display: grid;
         grid-template-columns: auto auto;
         width: 295px;
-        /* margin: 0% 35% 0% 0%; */
-        /* padding: 13px; */
         background: #FFFFFF;
         border: 1px solid #DADADA;
         box-sizing: border-box;
         border-radius: 4px;
     }
 
-    .purple-text {
-        font-family: 'Segoe UI';
+    #application-details p{/*margin for the text in second box*/
+        margin:2% 0% 0% 12px;
+    }
+
+    .purple-text {/* a class for some purple texts */
+        font-family: 'Apercu Pro';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
+        
         letter-spacing: -0.16px;
-
         color: #685DC5;
-       
     }
 
-       #text-section{
-            display: grid;
-            grid-template-rows: auto auto auto auto;
-            /* margin-top: 23%;
-            margin-left: 16%; */ 
-            width: 375px;
+    #text-section{/* text section after the second box*/
+        display: grid;
+        grid-template-rows: auto auto auto auto; 
+        width: 375px;
             
-        }
+    }
 
-        #funded-work{
-            font-family: serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 26px;
-            letter-spacing: -0.27px;
-            width: 80%;
-            color: #535353;
+    #funded-work{
+        font-family: 'Apercu Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.27px;
+        width: 80%;
+        color: #535353;
         }
         
-        #unbold-text{
-            font-family: serif;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 26px;
-            width: 85%;
-            letter-spacing: -0.27px;
+    #unbold-text{
+        font-family: 'Apercu Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        width: 85%;
+        letter-spacing: -0.27px;
+        color: #535353;
+    }
 
-            color: #535353;
-        }
+    #work-text{
+        font-family: 'Apercu Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.27px;
+        color: #535353;
+    }
 
-        #work-text{
-            font-family: serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 26px;
-
-
-            letter-spacing: -0.27px;
-
-            color: #535353;
-        }
-
-        #apply-button{
+    #apply-button{
         background: #685DC5;
         border-radius: 27px;
         color: whitesmoke;
-        font-family: 'Segoe UI';
+        font-family: 'Apercu Pro';
         width: 30%;
         height: 100%;
         padding: 8px;
@@ -201,13 +187,13 @@
 
     #first-section{
         margin-left: 25%;
+        margin-top: 10px;
         width: 100%;
     }
     #purple-background{
         position: absolute;
         width: 375px;
         height: 401px;
-        /* left: -1px; */
         top: 1000px;
         z-index: -1;
     }
@@ -235,18 +221,16 @@
         position: absolute;
         width: 275px;
         height: 480px;
-        /* left: 20px; */
         top: 988px;
         margin-left: 12%;
         background: #FFFFFF;
         border: 1px solid #E6E6E6;
         box-sizing: border-box;
-        border-radius: 0px 0px 4px 4px; 
-            
+        border-radius: 0px 0px 4px 4px;      
     }
 
     #second-section-text h3{
-        font-family: serif;
+        font-family: 'Apercu Pro';
         font-style: normal;
         font-weight: 500;
         font-size: 35px;
@@ -258,35 +242,31 @@
     }
 
     #second-section-text p{
-        font-family: serif;
+        font-family: 'Apercu Pro';
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         line-height: 26px;
         margin: 5% 0% 0% 2%;
         letter-spacing: -0.27px;
-
         color: #535353;
 
     }
 
     .price{
-        font-family: serif;
+        font-family: 'Apercu Pro';
         font-style: normal;
         font-weight: 300;
         font-size: 24px;
         line-height: 24px;
-
-
         letter-spacing: -0.218182px;
-
         color: #535353;
-   }
+    }
 
 
    #price-section{
-       display: grid;
-       grid-template-rows: auto auto auto;
+        display: grid;
+        grid-template-rows: auto auto auto;
         margin-top: 680px;
         margin-left: 50%;
    }
@@ -298,38 +278,38 @@
    }
 
    #box1{
-    display: grid;
-    grid-template-rows: auto auto;
-    background: #FFFFFF;
-    border: 1px solid #DADADA;
-    box-sizing: border-box;
-    border-radius: 4px;
-    padding: 10px;
-    width: 285px;
-    height: 250px;
+        display: grid;
+        grid-template-rows: auto auto;
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 10px;
+        width: 285px;
+        height: 250px;
    }
 
    #box2{
-    display: grid;
-    grid-template-rows: auto auto;
-    background: #FFFFFF;
-    border: 1px solid #DADADA;
-    box-sizing: border-box;
-    border-radius: 4px;
-    width: 285px;
-    height: 250px;
-    padding: 10px;
-   }
+        display: grid;
+        grid-template-rows: auto auto;
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 285px;
+        height: 250px;
+        padding: 10px;
+    }
 
    #box3{
-    display: grid;
-    grid-template-rows: auto auto;
-    background: #FFFFFF;
-    border: 1px solid #DADADA;
-    box-sizing: border-box;
-    border-radius: 4px;
-    width: 285px;
-    height: 250px;
+        display: grid;
+        grid-template-rows: auto auto;
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 285px;
+        height: 200px;
    }
 
    #box-section{
@@ -341,56 +321,58 @@
    }
 
    .box-text{
-    font-family: serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.16px;
-    color: #535353;
+        font-family: 'Aprecu Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.16px;
+        color: #535353;
+   }
+
+   .box-text3{
+       margin-bottom: 50px;
    }
 
    #woman-img{
-    width: 85px;
-    height: 75px;
-    border-radius: 50%;
+        width: 85px;
+        height: 75px;
+        border-radius: 50%;
    }
 
    #purple-slider-background{
-    position: absolute;
-    width: 375px;
-    height: 257px;
-    left: 0px;
-    margin-top: 15%;
-    z-index: -1;
+        position: absolute;
+        width: 375px;
+        height: 257px;
+        left: 0px;
+        margin-top: 15%;
+        z-index: -1;
    }
 
    #line-slider-background{
-    position: absolute;
-    width: 292px;
-    height: 257px;
-    left: 0px;
-    margin-top: 15.5%;
-    mix-blend-mode: color-burn;
-    /* border: 1px solid #E6E6E6; */
+        position: absolute;
+        width: 292px;
+        height: 257px;
+        left: 0px;
+        margin-top: 15.5%;
+        mix-blend-mode: color-burn;
    }
-   .slideshow-container {
-    position: relative;
-    margin-left: 25%;
-    top: 100px; 
-    width: 290px;
-    height: 400px;
-       
-}
 
-.slider-details{
-    background: #FFFFFF;
-    border: 1px solid #DADADA;
-    box-sizing: border-box;
-    border-radius: 4px;
-    width: 290px;
-    /* height: 500px; */
-    
+   .slideshow-container {
+        position: relative;
+        margin-left: 25%;
+        top: 100px; 
+        width: 290px;
+        height: 400px;
+       
+    }
+
+    .slider-details{
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 290px;
    }
 
    .slider-details-top{
@@ -399,175 +381,173 @@
    }
 
    .slider-details-bottom p {
-    font-family: serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 29px;
-    letter-spacing: -0.218182px;
-    /* width: 100%; */
-    color: #535353;
-
-   }
+        font-family: 'Aprecu Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 29px;
+        letter-spacing: -0.218182px;
+        color: #535353;
+    }
 
    .slider-details-bottom{
-    background: #FBFBFB;
-    border-radius: 0px 0px 4px 4px; 
+        background: #FBFBFB;
+        border-radius: 0px 0px 4px 4px; 
    }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
+    /* Hide the images by default */
+    .mySlides {
+     display: none;
+    }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 70%;
-  border: 2px solid #ECECEC;
-  color:  #685DC5;
-text-align: center;
-  font-size: 18px;
-  border-radius: 100%;
-  width: 40px;
-  height: 35px;
-}
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 70%;
+        border: 2px solid #ECECEC;
+        color:  #685DC5;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 100%;
+        width: 40px;
+        height: 35px;
+    }
 
-.next {
-  right: 0;
-}
+    .next {
+        right: 0;
+    }
 
-.prev{
-    margin-left: 200px;
-}
+    .prev{
+        margin-left: 200px;
+    }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
 
-@keyframes fade {
-  from {opacity: 0.4}
-  to {opacity: 1}
-}
+    @keyframes fade {
+        from {opacity: 0.4}
+        to {opacity: 1}
+    }
 
 
-h1 {
-    font-family: serif;
-font-style: normal;
-font-weight: 500;
-font-size: 35px;
-line-height: 40px;
-/* or 114% */
+    h1 {
+        font-family: 'Aprecu Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 40px;
+        margin-top: 25px;
+        letter-spacing: -0.4375px;
+        color: #685DC5;
+    }
 
-letter-spacing: -0.4375px;
+    .accordion {
+        width: 375px;
+        margin-top: 35%;
+        height: 920px;
+    }
 
-color: #685DC5;
-}
+    .accordion-item {
+        background-color: #fff;
+        color: #111;
+        margin: 1rem 0;
+        width: 100%;
+    }
+    .accordion-item-header {
+        padding: 0.5rem 3rem 0.5rem 1rem;
+        min-height: 3.5rem;
+        line-height: 1.25rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        font-family: 'Aprecu Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: -0.27px;
+        color: #535353;
+    }
 
-.accordion {
-  width: 375px;
-  /* max-width: 375px; */
-  margin: 2rem auto;
-  height: 100%;
-}
-.accordion-item {
-  background-color: #fff;
-  color: #111;
-  margin: 1rem 0;
-  width: 100%;
-  border-bottom: 2px solid black;
-}
-.accordion-item-header {
-  padding: 0.5rem 3rem 0.5rem 1rem;
-  min-height: 3.5rem;
-  line-height: 1.25rem;
-  display: flex;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  font-family: serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    letter-spacing: -0.27px;
-    color: #535353;
+    .accordion-item-header::after {
+        content: "\002B";
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+    .accordion-item-header.active::after {
+        content: "\2212";
+        border: 2px solid purple;
+        border-radius: 50%;
+        transform: rotate(180deg);
+        transition: 2s;
+    }
+    .accordion-item-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s ease-out;
+    }
 
-}
-.accordion-item-header::after {
-  content: "\002B";
-  font-size: 2rem;
-  position: absolute;
-  right: 1rem;
-  border: 2px solid black;
-  border-radius: 50%;
-  /* transform: rotate(180deg);
-  transition: 2s; */
-}
-.accordion-item-header.active::after {
-  content: "\2212";
-  border: 2px solid purple;
-  border-radius: 50%;
-  transform: rotate(180deg);
-  transition: 2s;
-  /* background-color: purple; */
-  /* transition:2s; */
-  
-}
-.accordion-item-body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-.accordion-item-body-content {
-  padding: 1rem;
-  line-height: 1.5rem;
-  
-}
+    .accordion-item-body-content {
+        padding: 1rem;
+        line-height: 1.5rem;
+    }
 
-/* @media(max-width:767px) {
-  html {
-    font-size: 14px;
-  }
-} */
+    #program{
+        font-family: 'Aprecu Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.18px;
+        color: #685DC5;
+        border-radius: 29px;
+        padding: 15px;
+        width: 300px;
+        margin-left: 3%;
+        animation: dropdown 2s ease-in-out forwards;
+    }
 
-  #program{
-    font-family: serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -0.18px;
-    color: #685DC5;
-    border-radius: 29px;
-    padding: 5px;
-    width: 150px;
-  }
+    @keyframes dropdown {
+        0% {
+            transform: scaleY(0)
+        }
+        80% {
+            transform: scaleY(1.1)
+        }
+        100% {
+            transform: scaleY(1)
+        }
+    }
 
-  #filter{
-    font-family: serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.16px;
-    color: #6A6A6A;
-  }
+    #filter{
+        font-family: serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.16px;
+        color: #6A6A6A;
+    }
 
-  #header-FAQ{
-    margin-left: 25%;
-    width: 375px;
-  }
+    #header-FAQ{
+        margin-left: 25%;
+        width: 375px;
+    }
 
    
 </style>
 <body>
     <div id="header">
-        <h1 id="harbour">Harbour Space </h1>
+        <h1 id="harbour">HARBOUR.SPACE </h1>
         <p id="header-p">/Interaction design</p>
         <img src="menu-icon.png" alt="an image" id="menu-icon">
     <div>
@@ -579,8 +559,8 @@ color: #685DC5;
             <p id="powered-by">Powered by:<strong>Zeptolab</strong></p>
             <img src="image2.png" alt="an image" id="logo2">
             
-            <div id="application-time">
-                <h2>Application closes in <h2>
+            <div id="application-time" class="gradient-border">
+                <h2><strong>Application closes in </strong><h2>
                 <p>6 Day  :  22 Hrs  :  56 Min  :  13 Seg</p>
             </div><br>
 
@@ -607,7 +587,8 @@ color: #685DC5;
             </div><br>
 
             <div id="text-section">
-                <p id="funded-work">A fully funded work-study program to launch your tech career </p><br> 
+                <p id="funded-work"><strong>A fully funded work-study program to 
+                launch your tech career</strong></p><br> 
     
                 <p id ="unbold-text">Harbour.Space has partnered with SCG to empower driven talent
                 and eliminate the barriers to accessing exceptional education and 
@@ -674,7 +655,7 @@ color: #685DC5;
                 </div>
     
                 <div class="box2-inner-bottom">
-                    <hr width="15%" style="color: aqua;"><br>
+                    <hr width="15%" style="color: aqua;margin-top: 8px;height: 0%;"><br>
                     <p class="box-text">Immerse yourself in the professional world during your apprenticeship.
                      You’ll learn the ropes from the best and get to apply your newly acquired 
                      knowledge in the field from day one.  </p>
@@ -685,11 +666,11 @@ color: #685DC5;
                 <div class="box3-inner-top">
                         <h4 class="purple-text">A full-time contract</h4><br>
                         <p class="price">1 Year / Full-Time</p>
+                        
                 </div>
-    
+                <hr width="15%" style="color: aqua; margin-bottom: 15px; height: 0%;">
                 <div class="box3-inner-bottom">
-                    <hr width="15%" style="color: aqua;"><br>
-                    <p class="box-text">You’ll be guaranteed a 1 year contract with SCG upon graduation. </p>
+                    <p class="box-text3">You’ll be guaranteed a 1 year contract with SCG upon graduation. </p>
                 </div>
             </div>
         </div>
@@ -787,7 +768,7 @@ color: #685DC5;
                         employability report could be provided to you separately during the admission process.
                     </div>
                 </div>
-            </div>
+            </div><hr width="95%" style="margin-left: 2%; background-color: #DADADA;">
             <div class="accordion-item">
                 <div class="accordion-item-header">
                 Do I get a job placement upon graduation?
@@ -802,14 +783,10 @@ color: #685DC5;
                         of B.Grimm multi- industry corporation with 140 years of history in Thailand. 
                         Together we insure students get the best knowledge about the current job market 
                         opportunities.<br>
-                        We offer our students paid internships options during studies jointly with our industrial
-                        partners.
-                        Employers that hired graduates of Harbour.Space in the past include Google, IBM, 
-                        Accenture, Typeform, Frog, and other tech centric companies. Our industry specific 
-                    employability report could be provided to you separately during the admission process.
+                        
                     </div>
                 </div>
-            </div>
+            </div><hr width="95%" style="margin-left: 2%; background-color: #DADADA;">
             <div class="accordion-item">
                 <div class="accordion-item-header">
                     What if I want to start my own company? 
@@ -831,7 +808,7 @@ color: #685DC5;
                     employability report could be provided to you separately during the admission process.
                     </div>
                 </div>
-            </div>
+            </div><hr width="95%" style="margin-left: 2%; background-color: #DADADA;">
             <div class="accordion-item">
                 <div class="accordion-item-header">
                     do i need a visa? 
@@ -846,14 +823,10 @@ color: #685DC5;
                     of B.Grimm multi- industry corporation with 140 years of history in Thailand. 
                     Together we insure students get the best knowledge about the current job market 
                     opportunities.<br>
-                    We offer our students paid internships options during studies jointly with our industrial
-                    partners.
-                    Employers that hired graduates of Harbour.Space in the past include Google, IBM, 
-                    Accenture, Typeform, Frog, and other tech centric companies. Our industry specific 
-                    employability report could be provided to you separately during the admission process.
+                    
                     </div>
                 </div>
-            </div>
+            </div><hr width="95%" style="margin-left: 2%; background-color: #DADADA;">
         </div>
         
         <script>
