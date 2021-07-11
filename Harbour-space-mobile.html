@@ -17,6 +17,7 @@
         #menu-icon{
             width: 35px;
             height: 30px;
+            margin-top: 8px;
         }
 
 
@@ -26,18 +27,21 @@
         width: 375px;
         height: 45px;
         background: #685DC5;
+        
         }
 
         #harbour{
             color: whitesmoke;
             font-size: 15px;
             font-family: 'Segoe UI';
+            margin-top: 10px;
         }
 
         #header-p{
             color: whitesmoke;
             font-size: 16px;
             font-family: 'Segoe UI';
+            margin-top: 10px;
         }
 
         #logo1{
@@ -195,9 +199,13 @@
         padding: 8px;
     }
 
+    #first-section{
+        margin-left: 25%;
+        width: 100%;
+    }
     #purple-background{
         position: absolute;
-        width: 330px;
+        width: 375px;
         height: 401px;
         /* left: -1px; */
         top: 1000px;
@@ -206,9 +214,9 @@
 
     #line-background{
         position: absolute;
-        width: 278px;
+        width: 275px;
         height: 245px;
-        left: 18px;
+        left: 44px;
         top: 855px;
         z-index: -1;
     }
@@ -217,7 +225,7 @@
         position: absolute;
         width: 235px;
         height: 220px;
-        left: 38px;
+        left: 62.5px;
         top: 875px;
         border-radius: 50%;
         z-index: 1;
@@ -229,7 +237,7 @@
         height: 480px;
         /* left: 20px; */
         top: 988px;
-        margin-left: 5%;
+        margin-left: 12%;
         background: #FFFFFF;
         border: 1px solid #E6E6E6;
         box-sizing: border-box;
@@ -280,7 +288,7 @@
        display: grid;
        grid-template-rows: auto auto auto;
         margin-top: 680px;
-        margin-left: 25%;
+        margin-left: 50%;
    }
 
    #price-section-inner{
@@ -328,7 +336,7 @@
        display: grid;
        grid-template-rows: auto auto auto;
        gap: 25px;
-       margin-left: 5%;
+       margin-left: 35%;
        margin-top: 50px;
    }
 
@@ -416,7 +424,7 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 65%;
+  top: 70%;
   border: 2px solid #ECECEC;
   color:  #685DC5;
 text-align: center;
@@ -450,7 +458,7 @@ text-align: center;
 
 #FAQ{
        display: grid;
-       grid-template-rows: auto auto auto;
+       grid-template-rows: 10% 2% 3%;
        width: 300px;
    }
 
@@ -468,8 +476,8 @@ text-align: center;
     border: 1px solid #DADADA;
     box-sizing: border-box;
     border-radius: 29px;
-    height: 100%;
-    width: 35%;
+    /* height: 10%;
+    width: 100%; */
 
    }
 
@@ -485,11 +493,13 @@ text-align: center;
    }
 
    #button1{
+    position: absolute;
+    margin-left: 280px;
     border: 1px solid #DADADA;
     box-sizing: border-box;
     border-radius: 50%;
     width: 25px;
-    /* height: 100%; */
+    
    }
 
    #button2{
@@ -501,6 +511,10 @@ text-align: center;
    #last-section{
        display: grid;
        grid-template-rows: auto auto;
+       margin-top: 25%;
+       margin-left: 25%;
+       height: 75%;
+       width: 100%;
    }
 
    #toShow-section{
@@ -509,7 +523,7 @@ text-align: center;
     font-weight: 500;
     font-size: 18px;
     line-height: 32px;
-    width: 45%;
+    
 
     letter-spacing: -0.33px;
 
@@ -520,7 +534,7 @@ text-align: center;
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 32px;
 
 
@@ -529,6 +543,7 @@ text-align: center;
     color: #535353;
    }
 
+   
 </style>
 <body>
     <div id="header">
@@ -626,6 +641,7 @@ text-align: center;
                     <p class="price">3 hours / day</p>
                 </div>
                 <div id="box1-bottom">
+                    <hr width="15%" style="color: aqua;"><br>
                     <p class="box-text">You will complete 15 modules to graduate. Daily classes are 3 hours,
                     plus coursework to complete in your own time. </p>
                 </div>
@@ -633,26 +649,27 @@ text-align: center;
 
             <div id="box2">
                 <div class="box2-inner-top">
-                    <h4 class="purple-text">Apprenticeship Commitment</h4>
+                    <h4 class="purple-text">Apprenticeship Commitment</h4><br>
                     <p class="price">3 hours / day</p>
                 </div>
     
                 <div class="box2-inner-bottom">
+                    <hr width="15%" style="color: aqua;"><br>
                     <p class="box-text">Immerse yourself in the professional world during your apprenticeship.
                      You’ll learn the ropes from the best and get to apply your newly acquired 
                      knowledge in the field from day one.  </p>
                 </div>
             </div>
-    
+            
             <div id="box3">
                 <div class="box3-inner-top">
-                        <h4 class="purple-text">A full-time contract</h4>
+                        <h4 class="purple-text">A full-time contract</h4><br>
                         <p class="price">1 Year / Full-Time</p>
-                        
                 </div>
     
                 <div class="box3-inner-bottom">
-                        <p class="box-text">You’ll be guaranteed a 1 year contract with SCG upon graduation. </p>
+                    <hr width="15%" style="color: aqua;"><br>
+                    <p class="box-text">You’ll be guaranteed a 1 year contract with SCG upon graduation. </p>
                 </div>
             </div>
         </div>
@@ -718,7 +735,7 @@ text-align: center;
 
         <div id="last-section">
             <div id="FAQ">
-                <h5>Frequently asked questions</h5><br>
+                <h5>Frequently asked questions</h5>
                 <p>Filter by:</p>
                 <select class="purple-text">
                     <option value="program condition" >program condition</option>
@@ -732,7 +749,7 @@ text-align: center;
                 <div id="FAQ-bottom-1">
                     <div id="FAQ-bottom-1-details">
                         <p id="questions">What are my obligations?</p>
-                        <!-- <p id="toShow-section"> 
+                        <p id="toShow-section"> 
                             The majority of our students receive numerous job offers
                             at the end of the second academic year of their Bachelor's
                             programme and at the end of the first academic year of
@@ -745,7 +762,7 @@ text-align: center;
                             partners.<br>
                             Employers that hired graduates of Harbour.Space in the past include Google, IBM, Accenture, Typeform,
                             Frog, and other tech centric companies. Our industry specific employability report could 
-                            be provided to you separately during the admission process.</p> -->
+                            be provided to you separately during the admission process.</p>
                     </div>
                     <button id="button1" onclick="myFunction()">+</button>
                 </div>
