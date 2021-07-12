@@ -301,28 +301,6 @@
         padding: 10px;
     }
 
-    .horizontal-line {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        
-    }
-
-    .horizontal-line::before,
-    .horizontal-line::after {
-        content: '';
-        flex: 1;
-        border-bottom: 1px solid #DADADA;
-}
-
-    .separator:not(:empty)::before {
-         margin-right: .25em;
-    }
-
-    .separator:not(:empty)::after {
-        margin-left: .25em;
-    }
-
    #box3{
         display: grid;
         grid-template-rows: auto auto;
@@ -334,13 +312,41 @@
         height: 200px;
    }
 
+   .horizontal-line {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        
+    }
+
+    .horizontal-line::before,
+    .horizontal-line::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #DADADA;
+}
+
+    .horizontal-line:not(:empty)::before {
+         margin-right: .25em;
+    }
+
+    .horizontal-line:not(:empty)::after {
+        margin-left: .25em;
+    }
+
    #box-section{
        display: grid;
        grid-template-rows: auto auto auto;
        gap: 25px;
        margin-left: 35%;
        margin-top: 50px;
+       
    }
+
+   /* #fourth-section{
+       width: 85%;
+   } */
 
    .box-text{
         font-family: 'Aprecu Pro';
@@ -467,7 +473,7 @@
 
 
     h1 {
-        font-family: 'Aprecu Pro';
+        font-family: 'Apercu Pro';
         font-style: normal;
         font-weight: 500;
         font-size: 35px;
@@ -559,7 +565,7 @@
     }
 
     #filter{
-        font-family: serif;
+        font-family: 'Apercu Pro';
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
@@ -691,7 +697,11 @@
                      knowledge in the field from day one.  </p>
                 </div>
             </div>
-            <div class="horizontal-line"><p style="padding: 10px;font-family: Apercu Pro; opacity: 0.5;"><strong> Graduation</strong></p></div> 
+
+            <div class="horizontal-line">
+                <p style="padding: 10px;font-family: Apercu Pro; opacity: 0.5;"><strong> Graduation</strong></p>
+            </div> 
+            
             <div id="box3">
                 <div class="box3-inner-top">
                         <h4 class="purple-text">A full-time contract</h4><br>

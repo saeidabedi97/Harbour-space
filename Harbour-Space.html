@@ -108,9 +108,9 @@
             letter-spacing: -0.18px;
             color: #000000;
             mix-blend-mode: normal;
-            width: 35%;
-            /* opacity: 0.5; */
-            /* margin: 35% 0% 0% 0%; */
+            width: 45%;
+            opacity: 0.5;
+            margin: 5% 0% 0% 5%;
         }
 
         #application-time{
@@ -126,20 +126,23 @@
         }
         
        #application-time h2{
+           font-family: 'Apercu Pro';
            font-size: 16px;
            letter-spacing: -0.145455px;
            color: #685DC5;
+           /* padding: 5%; */
        }
 
 
        #application-time p {
-            font-family: serif;
+            font-family: 'Apercu Pro';
             font-style: normal;
             font-weight: 300;
-            font-size: 25px;
+            font-size: 20px;
             line-height: 24px;
             letter-spacing: -0.27px;
             color: #535353;
+            opacity: 0.8;
        }
 
     #application-details{
@@ -230,9 +233,7 @@
         font-weight: 300;
         font-size: 22px;
         line-height: 32px;
-
         letter-spacing: -0.33px;
-
         color: #535353;
    }
 
@@ -270,8 +271,8 @@
    #box1-bottom{
        display: grid;
        grid-template-columns: auto 1fr;
-       /* margin: 25% 0% 0% 0%; */
-       border-top: 1px solid #DADADA;
+       border-top:1px solid #DADADA;
+       
 
    }
 
@@ -313,7 +314,7 @@
         line-height: 24px;
 
         letter-spacing: -0.16px;
-        border-top:  1px solid #DADADA;
+        
         
         color: #535353;
    }
@@ -366,7 +367,7 @@
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.16px;
-        border-top: 1px solid #DADADA;
+        
         margin: 0% 0% 10px 5%;
         color: #535353;
     }
@@ -377,6 +378,32 @@
         width: 50%;
         gap: 25px;
     }
+
+    #box-for-line{  /* horizontal line (------graduation------)*/
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        
+    }
+
+    #box-for-line::before,
+    #box-for-line::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #DADADA;
+}
+
+    #box-for-line:not(:empty)::before {
+         margin-right: 5%;
+         
+    }
+
+    #box-for-line:not(:empty)::after {
+        margin-left: 5%;
+    }
+
+   
 
    #box4{
         display: grid;
@@ -416,21 +443,18 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 24px;
-
-
         letter-spacing: -0.16px;
-
         color: #535353;
    }
 
-   /* #background-image4{
+   #background-image4{
    position: absolute;
     width: 985px;
     height: 250px;
     left: 250px;
-    top: 2000px;
+    margin-top: 50px;
     border: 1px solid #E6E6E6;
-   } */
+   }
    #woman-img{
         width: 110px;
         height: 100px;
@@ -454,7 +478,7 @@
        height: 350px;
        overflow: hidden;
        cursor:grab;
-       background: url(image5.png);
+       
        
 
    }
@@ -474,8 +498,7 @@
 
    .slider-details-top{
        display: grid;
-       grid-template-columns: 1fr 100% ;
-       
+       grid-template-columns: 25% auto auto;
        
    }
 
@@ -500,7 +523,7 @@
    #FAQ{
        display: grid;
        grid-template-columns: 1fr auto 1fr;
-       margin: 20% 0% 0% 15%;
+       margin: 10% 0% 0% 15%;
    }
 
    #FAQ h5{
@@ -625,7 +648,8 @@
         <img src="image1.png" alt="an image" id="logo1">
         <div id="left-section">
             <h1>Interaction Design<br>Apprenticeship</h1>
-            <p id="work-study">A fully funded work-study program to launch<br> your tech career </p>
+            <p id="work-study" ><strong> A fully funded work-study program to launch <br>
+                your tech career</strong> </p>
 
             <p id ="unbold-text">Harbour.Space has partnered with SCG to<br>empower driven talent
             and eliminate the<br>barriers to accessing exceptional education<br> and 
@@ -656,22 +680,22 @@
                 
                 <div>
                     <p class="purple-text"><strong>Location</strong></p>
-                    <p>Bangkok</p>
+                    <p style="font-family: 'Apercu Pro';opacity: 0.8;">Bangkok</p>
                 </div>
 
                 <div>
                 <p class="purple-text"><strong>Duration</strong></p>
-                <p>1 year<br>full time</p> 
+                <p style="font-family: 'Apercu Pro';opacity: 0.8;" >1 year <br> full time</p> 
                 </div>
 
                 <div>
                 <p class="purple-text"><strong>Start date</strong></p>
-                <p>30 June 2020</p>
+                <p style="font-family: 'Apercu Pro';opacity: 0.8;" >30 June 2020</p>
                 </div>
 
                 <div>
                 <p class="purple-text"><strong>End date</strong></p>
-                <p>3 Aug 2020</p>
+                <p style="font-family: 'Apercu Pro';opacity: 0.8;" >3 Aug 2020</p>
                 </div>
             </div>
             <img alt="an image" src="image3.png" id="image3">
@@ -703,18 +727,18 @@
             <div id="box1-bottom">
                 <div class="box1-inner-bottom">
                     <h4 class="purple-text">Tuition covered</h4>
-                    <p>€20,900</p>
+                    <p style="font-family: 'Apercu Pro'; ">€20,900</p>
                 </div>
             
 
                 <div class="box1-inner-bottom">
                     <h4 class="purple-text">Remaining </h4>
-                    <p>€2,000</p>
+                    <p style="font-family: 'Apercu Pro'; ">€2,000</p>
                 </div>
 
                 <div class="box1-inner-bottom">
                     <h4 class="purple-text">Living stipend </h4>
-                    <p>€8,400(€700/month)</p>
+                    <p style="font-family: 'Apercu Pro'; ">€8,400(€700/month)</p>
                 </div>
             </div>
         </div>
@@ -723,12 +747,13 @@
             <div id="box2-box3">
                 <div id="box2">
                     <div class="box2-inner-top">
-                        <h4 class="purple-text">Study commitment</h4>
+                        <h4 class="purple-text">Study commitment</h4><br>
                         <p>3 hours / day</p>
                     </div>
 
                     <div class="box2-inner-bottom">
-                        <p>You will complete 15 modules to<br> graduate. 
+                        <hr width="15%" style="color: aqua;margin-top: 8px;height: 0%;">
+                        <p style="font-family: 'Apercu Pro'; ">You will complete 15 modules to<br> graduate. 
                         Daily classes are 3 hours, plus coursework to 
                         complete in your own time.</p>
                     </div>
@@ -736,41 +761,45 @@
 
                 <div id="box3">
                     <div class="box3-inner-top">
-                        <h4 class="purple-text">Work commitment</h4>
-                        <p>4 hours / day</p>
+                        <h4 class="purple-text">Work commitment</h4><br>
+                        <p>4 hours / day</p><br>
                     </div>
 
                     <div class="box3-inner-bottom">
-                        <p>Immerse yourself in the professional world during your apprenticeship.
+                        <hr width="15%" style="color: #DADADA;margin-top: 8px;height: 0%;margin-left: 5%;">
+                        <p style="font-family: 'Apercu Pro'; ">Immerse yourself in the professional world during your apprenticeship.
                         You’ll learn the ropes from the best and get to apply your newly acquired 
                         knowledge in the field from day one.
                         </p>
                     </div>
                 </div>
-            </div><br>
+            </div><br> 
+            <div id="box-for-line">               
+                <div class="horizontal-line"><p style="padding: 10px;font-family: 'Apercu Pro'; opacity: 0.5;"><strong> Graduation</strong></p></div>
+            </div>
             <div id="box4">
                 <div class="box4-inner-top">
                     <h4 class="purple-text">A full-time contract</h4>
-                    <p>1 Year / Full-Time</p>
-                    <hr>
+                    <p style="font-family: 'Apercu Pro'; ">1 Year / Full-Time</p>
+                    
                 </div>
 
                 <div class="box4-inner-bottom">
-                    <p>You’ll be guaranteed a 1 year contract with SCG upon graduation.</p>
-
+                    <hr width="10%" style="color: #DADADA;margin-top: 8px;height: 0%;margin-left: 3%;">
+                    <p style="font-family: 'Apercu Pro'; ">You’ll be guaranteed a 1 year contract with SCG upon graduation.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- <img src="image5.png" alt="an image" id="background-image4"> -->
+    <img src="image5.png" alt="an image" id="background-image4">
     <div class="slider">
         <div class="slider-inner">
             <div class="slider-details">
                 <div class="slider-details-top">
                     <img src="woman.png" alt="an image" id="woman-img">
-                    <p>Irene Pereyra<br>Interaction Design Fellow ‘19</p>
-                    
+                    <p style="font-family: 'Apercu Pro'; "> <strong> Irene Pereyra </strong><br>Interaction Design Fellow ‘19</p>
+                    <p style="font-family: 'Apercu Pro'; " >in</p>
                 </div>
                 <div class="slider-details-bottom">
                     <p>This Fellowship was a turning point in my career. 
@@ -783,8 +812,9 @@
             <div class="slider-details">
                 <div class="slider-details-top">
                     <img src="woman.png" alt="an image" id="woman-img">
-                    <p>Irene Pereyra<br>
+                    <p style="font-family: 'Apercu Pro'; "><strong>Irene Pereyra</strong><br>
                         Interaction Design Fellow ‘19</p>
+                        <p style="font-family: 'Apercu Pro'; ">in</p>
                     
                 </div>
                 <div class="slider-details-bottom">
@@ -798,8 +828,8 @@
             <div class="slider-details">
                 <div class="slider-details-top">
                     <img src="woman.png" alt="an image" id="woman-img">
-                    <p>Irene Pereyra<br>Interaction Design Fellow ‘19</p>
-                   
+                    <p style="font-family: 'Apercu Pro'; "><strong>Irene Pereyra</strong><br>Interaction Design Fellow ‘19</p>
+                   <p style="font-family: 'Apercu Pro'; ">in</p>
                 </div>
                 <div class="slider-details-bottom">
                     <p>This Fellowship was a turning point in my career. 
